@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container a:link, .container a:visited{
+            text-decoration:none;
+            color:white;
+            background-color: aquamarine;
+            font-family: sans-serif;
+            font-size: 2rem;
+            text-transform: uppercase;
+            margin: 100px;
+            padding:10px 30px;
+            border-radius: 10px;
+            display: inline-block;
+            transition: 0.2s;
+        }
+        .container a:hover{
+            background-color: tomato;
+        }
+        .container a:active{
+            background-color: yellowgreen;
+        }
+        .container p:first-child{
+            color:crimson;
+        } 
+        .container p:nth-child(4){
+            color:blue;
+        }
+        input{
+            font-family:sans-serif;
+            font-size: 2rem;
+            background-color: rgba(0 174 214/0.1);
+            outline:none;
+            border: 3px solid rgba(0 174 214);
+            padding:10px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        input:focus{
+            border-color:tomato;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>rokon</p>
+        <a href="#">click me</a>
+        <input type="text"name="name"
+        placeholder="enter your name"/>
+        <p>naruto</p>
+        <p>kira</p>
+        <p>namj</p>
+        <p>porshi</p>
+    </div>
+</body>
+</html>
