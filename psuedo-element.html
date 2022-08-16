@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+         margin:0;
+         padding:0;
+        }
+        nav{
+            background-color: #222;
+        }
+        ul{
+            text-align: center;
+            padding: 20px;
+        }
+        ul a{
+            text-decoration: none;
+            color: white;
+            font-family: sans-serif;
+            font-size:1.3rem;
+            margin: 20px;
+            position: relative;
+            transition: color 0.2s linear;
+        }
+        ul a:hover{
+            color:rgb(0, 174, 214);
+        }
+        ul a::after{
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            transform: translateX(-100px);
+            visibility: hidden;
+            content:"";
+            width:0%;
+            height:3px;
+            background-color: rgb(214, 0, 157);
+            transition:  all 0.5s cubic-bezier(.5,-0.65,.37,1.8);
+        }
+        ul a:hover::after{
+            width: 100%;
+            transform: translateX(0px);
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="#">home</a>
+            <a href="#">product</a>
+            <a href="#">order</a>
+            <a href="#">about</a>
+            <a href="#">contact</a>
+        </ul>
+    </nav>
+</body>
+</html>
